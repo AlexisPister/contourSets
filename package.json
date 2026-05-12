@@ -1,0 +1,29 @@
+{
+  "name": "hyperedgerouting",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/my-lib.umd.cjs",
+  "module": "./dist/my-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-lib.js",
+      "require": "./dist/my-lib.umd.cjs"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^8.0.8"
+  },
+  "dependencies": {
+    "@turf/turf": "^7.3.4",
+    "d3": "^7.9.0",
+    "geojson": "^0.5.0",
+    "linkedom": "^0.18.12"
+  }
+}

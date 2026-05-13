@@ -64,9 +64,11 @@ export function coreNode() {
 
   let edges = [
     { id: "e1", nodes: ["a", "b", "c", "d"] },
-    { id: "e2", nodes: ["e", "f", "g", "d"] },
-    { id: "e3", nodes: ["h", "i", "j", "d"] },
-    { id: "e4", nodes: ["h", "i", "j", "d"] },
+    { id: "e2", nodes: ["a", "b", "c"] },
+    { id: "e3", nodes: ["a", "b", "c", "d"] },
+    { id: "e4", nodes: ["e", "f", "g", "d"] },
+    { id: "e5", nodes: ["h", "i", "j", "d"] },
+    { id: "e6", nodes: ["h", "i", "j", "d"] },
   ];
 
   const hypergraph = new Hypergraph(nodes, edges);

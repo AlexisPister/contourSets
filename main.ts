@@ -64,7 +64,8 @@ let edges = [
 // const hypergraph = manySameHyperedge();
 // const hypergraph = coreHyperedge();
 // const hypergraph = coreNode();
-const hypergraph = prefattachmentHypergraph(6, 10, 0.15);
+// const hypergraph = prefattachmentHypergraph(6, 10, 0.15);
+const hypergraph = prefattachmentHypergraph(12, 20, 0.1);
 
 // const hypergraph = Hypergraph.fromJson(data);
 
@@ -78,12 +79,13 @@ const height = 1000;
 
 let layoutResult = forceLayoutD3(hypergraph, 1000, 1000);
 
-// let routing = new HyperedgeRouting(hypergraph, layoutResult);
+let routing = new HyperedgeRouting(hypergraph, layoutResult);
 // let routing = new HyperedgeRoutingOneAnchor(hypergraph, layoutResult);
 // let routing = new HyperedgeRoutingTwoAnchor(hypergraph, layoutResult);
 // let routing = new HyperedgeRoutingEnergy(hypergraph, layoutResult);
 // let routing = new HyperedgeRoutingMidpointAnchor(hypergraph, layoutResult);
-let routing = new HyperedgeRoutingCornerAnchor(hypergraph, layoutResult);
+// let routing = new HyperedgeRoutingCornerAnchor(hypergraph, layoutResult);
+// let routing = new HyperedgeRoutingCornerAnchor(hypergraph, layoutResult);
 routing.run();
 
 // const overlapArea = computeHypergraphOverlapArea(hypergraph);

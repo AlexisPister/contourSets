@@ -6,7 +6,7 @@ import { Hypergraph } from "./Hypergraph.ts";
 import type { NodeId } from "./Hypergraph";
 import type { Layout } from "./layout";
 
-const ANGLE_THRESHOLD = Math.PI / 3;
+const ANGLE_THRESHOLD = Math.PI / 2;
 // Hull nodes whose interior angle is below this get two anchors (one per adjacent edge normal)
 const CORNER_THRESHOLD = Math.PI / 8;
 
